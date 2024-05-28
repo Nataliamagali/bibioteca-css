@@ -1,0 +1,77 @@
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* Clase fixed-width container que se "autocentrará" a sí misma */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+  /* Estilo de botón favorito */
+.btn {
+    background-color: #c61a8d; /* Color de fondo */
+    color: rgb(208, 218, 25); /* Color de texto */
+    padding: 11px 21px; /* Espacio del botom*/
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 17px; /* Tamaño de fuente */
+    
+}
+
+.btn:hover {
+    background-color: #1193ea; /* Color de fondo al pasar el ratón */
+}
+
+  /* Estilo de columnas flexibles */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* las columnas se ajustan a la siguiente línea */
+    margin-right: -16px;
+    margin-left: -16px;
+}
+
+.col {
+    flex: 1;
+    padding-right: 11px;
+    padding-left: 11px;
+}
+/* Aqui va la barra de navegación con flex */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(42, 36, 36, 0.886);
+    padding: 11px 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.nav-title {
+    color: white;
+    margin: 0;
+    font-size: 15px;
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;/* aqui saco el subrayado del texto*/
+    padding:8px 16px;/* aqui el botón para hacer que el texto no esté pegado a los bordes.*/
+    border-radius: 5px; /* Redondea las esquinas del botón.*/
+    width: 0 auto;
+    justify-content: flex-end;
+
+}
